@@ -426,7 +426,7 @@ static void processingInstructionSAX (void * ctx,
 		/** Send any partially-parsed text data into the old node that is now the parent node,
 		 then change the "storing chars" flag to fit the new node */
 		
-		Text *tNode = [[Text alloc] initWithValue:_storedChars];
+		SVGText *tNode = [[SVGText alloc] initWithValue:_storedChars];
 		
 		[_parentOfCurrentNode appendChild:tNode];
 		
@@ -691,7 +691,7 @@ static void startElementSAX (void *ctx, const xmlChar *localname, const xmlChar 
 	{
 		/** Send any parsed text data into the node-we're-closing */
 		
-		Text *tNode = [[Text alloc] initWithValue:_storedChars];
+		SVGText *tNode = [[SVGText alloc] initWithValue:_storedChars];
 		
 		[_parentOfCurrentNode appendChild:tNode];
 		

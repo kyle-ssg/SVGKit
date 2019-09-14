@@ -71,7 +71,7 @@ FOUNDATION_EXPORT const unsigned char SVGKitFramework_VersionString[];
 #import "NodeList+Mutable.h"
 #import "NodeList.h"
 #import "ProcessingInstruction.h"
-#import "Text.h"
+#import "SVGText.h"
 #import "DOMGlobalSettings.h"
 
 // SVG DOM
